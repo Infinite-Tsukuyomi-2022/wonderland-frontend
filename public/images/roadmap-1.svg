@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="117" height="138" viewBox="0 0 117 138">
+  <g id="Group_159" data-name="Group 159" transform="translate(-169 -4269)">
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(169 4338)" fill="#c1fc65" stroke="#4573b8" stroke-width="4">
+      <ellipse cx="58.5" cy="18" rx="58.5" ry="18" stroke="none"/>
+      <ellipse cx="58.5" cy="18" rx="56.5" ry="16" fill="none"/>
+    </g>
+    <text id="_1" data-name="1" transform="translate(232 4379)" fill="#3574be" font-size="105" font-family="RobotoMono-BoldItalic, Roboto Mono" font-weight="700" font-style="italic"><tspan x="-30.813" y="0">1</tspan></text>
+    <path id="_1_-_Outline" data-name="1 - Outline" d="M5.191.5H-9.874L-.022-56.212-19.506-49.5l2.452-14.044L16.27-75.148h1.7ZM-8.685-.5H4.345L16.789-74.148H16.44l-32.609,11.36-2.06,11.8L1.253-57.709Z" transform="translate(232 4379)" fill="rgba(0,0,0,0)"/>
+  </g>
+</svg>
