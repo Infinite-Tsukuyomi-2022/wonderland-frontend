@@ -17,7 +17,11 @@ const FooterSection = () => {
   return (
     <Root>
       <Wrapper>
-        <Logo><img src="/images/footer-logo.svg" alt="" /></Logo>
+        <Logo>
+          <a href={wording.logoLink}>
+            <img src="/images/footer-logo.svg" alt="" />
+          </a>
+        </Logo>
         <Content>
           <div className="links">
             { wording.links.map((link, i) =>
@@ -59,7 +63,7 @@ const Logo = styled.div`
   ${respondTo.md} {
     display: none;
   }
-  img {
+  .img {
     display: block;
     width: 100%;
     height: auto;

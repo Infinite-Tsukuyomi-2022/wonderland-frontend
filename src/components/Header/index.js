@@ -58,9 +58,11 @@ const Header = () => {
     <Root ref={headerRef}>
       <Fixeder transparent={isMenuOpen} ref={fixederRef}>
         <Wrapper>
-          <Link className="logo" to="/">
+          {/* <Link className="logo" to="/"> */}
+          <a className="logo" href={wording.logoLink}>
             <img src={wording.logo} alt={wording.logo_alt} />
-          </Link>
+          </a>
+          {/* </Link> */}
           <div className="main">
             <MenuWrapper open={isMenuOpen}>
               <LinksList className="link-list" data={wording.links} onClickLink={handleClickLink} />

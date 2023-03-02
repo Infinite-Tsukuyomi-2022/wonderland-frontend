@@ -1,6 +1,7 @@
 
 const header = {
   logo: '/images/logo.svg',
+  logoLink: 'https://www.aicreate360.com/',
   links: [
     { "to": "/?to=heading", "title": "灣島樂園" },
     { "to": "/?to=empower", "title": "賦能" },
@@ -105,20 +106,21 @@ const homepage = {
       { link: "https://www.aicreate360.com/", photo: "/images/partner-create.png"},
       { link: "https://www.liondaonft.com/", photo: "/images/partner-lion.svg"},
       { link: "https://www.chaebol.art/", photo: "/images/partner-chaebol.svg"},
-      { link: "https://cargocollective.com/boyealai", photo: "/images/partner-hongmin.png"},
+      { link: "", photo: "/images/partner-hongmin.png"},
     ]
   },
   qa: {
     title: "常見問題",
     list: [
-      { question: "發售細節", answer: "① 灣島樂園Wonderland將公開發售3000枚NFT，包含保留600枚給未來合作夥伴、團隊成員、行銷宣傳，另外公開發售2400枚。\n② 灣島樂園Wonderland NFT採用Free Mint，免費領取，每個錢包地址限購1枚。\n③灣島樂園Wonderland NFT是在Polygon區塊鏈上發行，所有交易及所有權憑證均記錄於Polygon區塊鏈，確保作品的真實性。" },
-      { question: "NFT購買教學", answer: "申請Metamask錢包：目前僅支援MetaMask 錢包購買，請確認是否已擁有MetaMask錢包帳戶，如尚未擁有，請先創建錢包。\n② 連結Metamask錢包：引導至指定購買頁面前,請先確認是否已連結您的MetaMask錢包。\n③點選「免費領取灣島樂園」。（須自行負擔Gas Fee，Matic）" },
+      { question: "發售細節", answer: "① 灣島樂園Wonderland將發售3000枚NFT，包含保留600枚給未來合作夥伴、團隊成員、行銷宣傳，另外公開發售2400枚。\n② 灣島樂園Wonderland NFT採用Free Mint，免費領取，每個錢包地址限購1枚。\n③ 灣島樂園Wonderland NFT是在Polygon區塊鏈上發行，所有交易及所有權憑證均記錄於Polygon區塊鏈，確保作品的真實性。" },
+      { question: "NFT購買教學", answer: "① 申請Metamask錢包：目前僅支援MetaMask 錢包購買，請確認是否已擁有MetaMask錢包帳戶，如尚未擁有，請先創建錢包。\n② 連結Metamask錢包：引導至指定購買頁面前，請先確認是否已連結您的MetaMask錢包。\n③ 點選「免費領取灣島樂園」。（須自行負擔Gas Fee，Matic）" },
       { question: "如何創建 Metamask 錢包", answer: "Metamask錢包下載教學: <a href='https://reurl.cc/lZGabd' target='_blank'>https://reurl.cc/lZGabd</a>" },
-      { question: "購買的NFT是否可以退貨", answer: "依消費者保護法第 19 條第 2 項規定所訂定「通訊交易解除全合理例外情事適用準則」第 2 條第 5 款之規定，非以有形媒介提供之數位內容，一經提供即為完成線上服務，無法享有七 天猶豫期間之權益，且不得辦理退貨。\n使用者於本平臺購買 NFT 數位資產並不適用消費者保護法第 19 條第1項七天猶豫期間之規 定，故無論任何情形皆不得回復或退款。但您可以上架至二手交易市場進行販售。" },
+      { question: "購買的NFT是否可以退貨", answer: "依消費者保護法第 19 條第 2 項規定所訂定「通訊交易解除全合理例外情事適用準則」第 2 條第 5 款之規定，非以有形媒介提供之數位內容，一經提供即為完成線上服務，無法享有七天猶豫期間之權益，且不得辦理退貨。\n使用者於本平臺購買 NFT 數位資產並不適用消費者保護法第 19 條第1項七天猶豫期間之規定，故無論任何情形皆不得回復或退款。但您可以上架至二手交易市場進行販售。" },
       { question: "版權聲明", answer: "當您持有「灣島樂園 Wonderland NFT」時，具有以下權利: \n① 有權私下、非商業目的公開展示作品，或非基於商業目的授予他人展示NFT的權利。\n② 可以自行下載持有的NFT，但是不得自行修改、複製、散佈NFT，亦不得販售NFT之複製物，且無權製作該NFT之衍生NFT及商品。\n③ 有權隨時將您持有的NFT，進行權利轉讓或轉售。 \n④ 不具有灣島樂園Wonderland NFT上的數位藝術作品的智慧財產權及著作權等相關使用權利。 \n⑤ 使用者同意於本網站進行之交易規定及解釋適用於臺灣法律規範。 " },
     ]
   },
   footer: {
+    logoLink: 'https://www.aicreate360.com/',
     links: [
       { "to": "/?to=heading", "title": "灣島樂園" },
       { "to": "/?to=empower", "title": "賦能" },
