@@ -30,7 +30,6 @@ const App = ({ Router = BrowserRouter }) => {
           <Switch>
             <Route path="/" exact={true} component={HomePage} />
             <Route path="/en/" exact={true} component={HomePage} />
-            <Redirect to="/" />
           </Switch>
         </>
       </Router>
