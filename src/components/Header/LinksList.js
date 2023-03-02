@@ -55,7 +55,7 @@ const LinkItem = styled(Link)`
   padding: 4px 0px;
   height: 100%;
   line-height: 1;
-  font-size: ${({ size }) => size === 'small' ? 12 : 16}px;
+  font-size: ${({ size }) => size === 'small' ? 14 : 16}px;
   transition: all .3s ease, font-size 0s;
   ${fontFamily};
   & + a {
