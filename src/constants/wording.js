@@ -24,7 +24,7 @@ const header_en = {
   logo: '/images/logo.svg',
   links: [
     { "to": "/en/?to=heading", "title": "Wonderland" },
-    { "to": "/en/?to=empower", "title": "Empowerment" },
+    { "to": "/en/?to=empower", "title": "Utility" },
     { "to": "/en/?to=mint", "title": "Mint NFT" },
     { "to": "/en/?to=design", "title": "Design" },
     { "to": "/en/?to=roadmap", "title": "RoadMap" },
@@ -142,9 +142,9 @@ const homepage_en = {
     content: "In the near future, AI will take the role of humans to be the dominant thinker, \n and control man’s life and behavior overwhelmingly through the global.	\n Therefore, there is a rebelling group of a new generation that is unsatisfied with \n the status quo and looks forward to living an unrestricted life. In order to hide from the surveillance of robots, \n they united and travel through the gate of spacetime to a hidden island of wonder. \n They decide to live freely there with all the fantastic creatures and build a Wonderland to blow everyone’s mind.",
   },
   empower: {
-    title: "Empowerment",
-    subtitle: "Film and Television Empowerment ×\nIP Co-creation × Answer to Earn",
-    content: "Film and Television Empowerment × IP Co-creation × Answer to Earn \n We aim to build a platform to share IP through Wonderland NFT, assist creators to re-translate Taiwan’s image for the international market through blockchain technology, and share the most profits with creators. \n Besides creators, you are welcome to join our Oh My Goblin (OMG) Tokenomics platform to get tokens by “Answer to earn” and exchange them for the products you favored."
+    title: "Utility",
+    subtitle: "Film and Television Utilities ×\nIP Co-creation × Answer to Earn",
+    content: "Film and Television Utilities × IP Co-creation × Answer to Earn \n We aim to build a platform to share IP through Wonderland NFT, assist creators to re-translate Taiwan’s image for the international market through blockchain technology, and share the most profits with creators. \n Besides creators, you are welcome to join our Oh My Goblin (OMG) Tokenomics platform to get tokens by “Answer to earn” and exchange them for the products you favored."
   },
   mint: {
     title: "Mint NFT",
@@ -174,7 +174,7 @@ const homepage_en = {
     list: [
       [
         "Release Wonderland NFT: Wonderland NFT is the pass to the ecosystem of Wonderland. The owner, as the VIP of Wonderland, will be empowered.",
-        "Launch the first empowerment of film and television, idol, and entertainment.",
+        "Launch the first utility of film and television, idol, and entertainment.",
         "Build up the OMG platform: create and incubate Goblins and build the Tokenomics of “Answer to Earn.”",
         "Release OMG NFT: Possess your Goblin avatars and use them as your ID to enter Wonderland.",
       ],
@@ -182,7 +182,7 @@ const homepage_en = {
         "Commercial use rights for OMG: Possessing both Wonderland NFT and OMG NFT will have commercial use rights for OMG NFT.",
         "Goblin PFP and OMG Avatar Builder.",
         "Creator economy: Launch the profit-sharing mode for the OMG platform.",
-        "Launch the second empowerment of business collaboration.",
+        "Launch the second utility of business collaboration.",
       ],
       [
         "3D Avatar: Airdrop to OMG NFT owners.",
@@ -210,13 +210,13 @@ const homepage_en = {
       { question: "Guideline to Mint NFT", answer: "① Wonderland will release 3,000 NFTs publicly, including 600 for future partners, group members, and promotion events.\n② Wonderland NFT applying Free Mint. Everyone is free to have, but each wallet is limited to one.\n③ Wonderland NFT will be released on Polygon blockchain. Each trade and certificate of ownership will be encoded onto Polygon blockchain to ensure the authenticity of the work." },
       { question: "How to register for the MetaMask wallet?", answer: "Guideline to create the MetaMask wallet: <a href='https://reurl.cc/lZGabd' target='_blank'>https://reurl.cc/lZGabd</a>" },
       { question: "Is it possible to return the NFT you Mint?", answer: "According to Paragraph 5, Article 2 of The “Regulations on Reasonable Matters as Exceptions to Rescind the Distance Sales”, which is enacted pursuant to Paragraph 2, Article 19 of the “Consumer Protection Act”., the supply of digital content which is not supplied on a tangible medium, or online services which would be fully performed once begun are one of the exceptions of the right to rescind the distance sales. Thus the right to return under Paragraph 1, Article 19 of the “Consumer Protection Act”will not apply.\nTherefore, the return will not be accepted for the user who Mint NFT on our platform. However, the user could trade it in the second-hand market. " },
-      { question: "Copyright Statement", answer: "When you possess Wonderland NFT, you are authorized as follows:\n ① You are authorized to showcase the work privately for non-commercial purposes or authorize others to showcase it for non-commercial purposes.\n② You are authorized to download the NFT you possessed, but it is not allowed to modify, duplicate or Distribution the NFT. And it is forbidden to sell the NFT copy, and produce relative NFT or goods.\n③ You are authorized to transfer or trade your NFT anytime.\n ④ You do not possess the intellectual property and copyright of Wonderland NFT.\n ⑤ The user agreed the NFT transaction within this website shall be governed and construed in accordance with the laws of the Republic of China (Taiwan)." },
+      { question: "Copyright Statement", answer: "When you possess Wonderland NFT, you are authorized as follows:\n ① You are authorized to showcase the work privately for non-commercial purposes or authorize others to showcase it for non-commercial purposes.\n ② You are authorized to download the NFT you possessed, but it is not allowed to modify, duplicate or Distribution the NFT. And it is forbidden to sell the NFT copy, and produce relative NFT or goods.\n ③ You are authorized to transfer or trade your NFT anytime.\n ④ You do not possess the intellectual property and copyright of Wonderland NFT.\n ⑤ The user agreed the NFT transaction within this website shall be governed and construed in accordance with the laws of the Republic of China (Taiwan)." },
     ]
   },
   footer: {
     links: [
       { "to": "/en/?to=heading", "title": "Wonderland" },
-      { "to": "/en/?to=empower", "title": "Empowerment" },
+      { "to": "/en/?to=empower", "title": "Utility" },
       { "to": "/en/?to=mint", "title": "Mint NFT" },
       { "to": "/en/?to=design", "title": "Design" },
       { "to": "/en/?to=roadmap", "title": "RoadMap" },
