@@ -6,7 +6,7 @@ import Web3 from 'web3/dist/web3.min.js'
 const web3 = new Web3(Web3.givenProvider);
 const contractABI = require('../contract/contract-abi.json');
 
-function chainMapping(id){
+function chainMapping(id) {
   let name = '';
   let url = '';
   switch (id) {
@@ -29,6 +29,10 @@ function chainMapping(id){
     case (id === "0x2a"):
       name = 'Kovan Test Network';
       url = 'https://kovan.etherscan.io/';
+      break;
+    case (id === "0x80001"):
+      name = 'Mumbai Test Network';
+      url = 'https://polygonscan.com/';
     default:
       name = '';
       url = '';
@@ -45,9 +49,9 @@ function getTransactionParams(amount) {
     to: contract_address,
     from: window.ethereum?.selectedAddress,
     value: ethers.utils.hexlify(
-        ethers.utils.parseEther((parseInt(amount) * nftPrice).toString())
-      ).slice(2).replace(/^0+/, ''),
-  
+      ethers.utils.parseEther((parseInt(amount) * nftPrice).toString())
+    ).slice(2).replace(/^0+/, ''),
+
     // TODO: NFT mint method here
     data: data,
     chainId: contractChainId,
@@ -71,7 +75,7 @@ export const mintNFT = async (amount) => {
 
     const { url } = chainMapping(contract_address);
     message = `checkout out on ${url}tx/${txHash} later.`
-    
+
   }
   catch (err) {
     message = `something went wrong: ${err.message}`;
