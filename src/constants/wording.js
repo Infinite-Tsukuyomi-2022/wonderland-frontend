@@ -29,7 +29,7 @@ const header_en = {
     { "to": "/en/?to=design", "title": "Design" },
     { "to": "/en/?to=roadmap", "title": "RoadMap" },
     { "to": "/en/?to=partner", "title": "Partner" },
-    { "to": "/en/?to=qa", "title": "Common Questions" },
+    { "to": "/en/?to=qa", "title": "FAQ" },
   ],
   socials: [
     { "icon": "Discord", "link": "https://discord.com/invite/BPRPgKpbcz" },
@@ -154,7 +154,7 @@ const homepage_en = {
     total_count: "3000",
     info1: "Special Pre-Sale: 2023/3/29 12:00 GMT+8 (each wallet is limited to one)",
     info2: "Public Release: 2023/3/30 12:00 GMT+8 (each wallet is limited to one)",
-    hint: "Reminder: Please register for the MetaMask wallet before Mint. To see more information please check the Guideline to Mint NFT in the common question. "
+    hint: "Reminder: Please register for the MetaMask wallet before Mint. To see more information please check the Guideline to Mint NFT in the FAQ. "
   },
   design: {
     title: "Design",
@@ -204,7 +204,7 @@ const homepage_en = {
     ]
   },
   qa: {
-    title: "Common Questions",
+    title: "FAQ",
     list: [
       { question: "Release Details", answer: "① Wonderland will release 3,000 NFTs publicly, including 600 for future partners, group members, and promotion events.\n② Wonderland NFT applying Free Mint. Everyone is free to have, but each wallet is limited to one.\n③ Wonderland NFT will be released on Polygon blockchain. Each trade and certificate of ownership will be encoded onto Polygon blockchain to ensure the authenticity of the work." },
       { question: "Guideline to Mint NFT", answer: "① Wonderland will release 3,000 NFTs publicly, including 600 for future partners, group members, and promotion events.\n② Wonderland NFT applying Free Mint. Everyone is free to have, but each wallet is limited to one.\n③ Wonderland NFT will be released on Polygon blockchain. Each trade and certificate of ownership will be encoded onto Polygon blockchain to ensure the authenticity of the work." },
@@ -221,7 +221,7 @@ const homepage_en = {
       { "to": "/en/?to=design", "title": "Design" },
       { "to": "/en/?to=roadmap", "title": "RoadMap" },
       { "to": "/en/?to=partner", "title": "Partner" },
-      { "to": "/en/?to=qa", "title": "Common Questions" },
+      { "to": "/en/?to=qa", "title": "FAQ" },
     ],
     email: "settvdao@aicrate360.com",
     copyright: "2023 copyright Create Intelligens Inc."
@@ -229,10 +229,12 @@ const homepage_en = {
 
 }
 
-export default {
+const exportObj = {
   'en': {
     header: header_en,
     homepage: homepage_en
   },
   'zh-TW': { header, homepage }
 }
+
+export default exportObj
