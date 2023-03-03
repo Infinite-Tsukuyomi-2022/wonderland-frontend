@@ -34,7 +34,7 @@ const MintSection = ({...props}) => {
         }
       }
       else {
-        console.log("You have already minted.")
+        setCurrentStatus('minted');
         // Add hint here 
       }
     }
@@ -65,7 +65,7 @@ const MintSection = ({...props}) => {
         <Main>
           <img src="/images/mint-main.png" alt="" />
           <Button onClick={handleClickMintButton}>{
-            wallet.status === 'connected' ? wording.free : wording.connect
+            currentStatus === 'minted' ? "Fuck" : wallet.status === 'connected' ? wording.free : wording.connect
           }</Button>
         </Main>
         <Content lang={lang}>
