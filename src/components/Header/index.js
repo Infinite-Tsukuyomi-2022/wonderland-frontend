@@ -59,7 +59,7 @@ const Header = () => {
       <Fixeder transparent={isMenuOpen} ref={fixederRef}>
         <Wrapper>
           {/* <Link className="logo" to="/"> */}
-          <a className="logo" href={wording.logoLink}>
+          <a className="logo" href={wording.logoLink} target="_blank" rel="noreferrer">
             <img src={wording.logo} alt={wording.logo_alt} />
           </a>
           {/* </Link> */}

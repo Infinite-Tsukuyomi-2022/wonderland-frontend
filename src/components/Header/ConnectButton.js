@@ -4,9 +4,10 @@ import useConnectWallet from '../../utils/useConnectWallet';
 import { colors } from '../../constants/colors';
 import { fontFamily } from '../Typography';
 import { respondTo } from '../../utils/responsive';
+import { F } from 'ramda';
 
 const ConnectButton = ({ msg_gold, msg_whitelist, ...props }) => {
-  const { status, walletDisplay, walletAddress, onConnect, isNotFound } = useConnectWallet();
+  const { status, walletDisplay, walletAddress, onConnect, isNotFound, handleDisconnectWallet } = useConnectWallet();
 
   useEffect(() => {
     window.ethereum?.on('accountsChanged', function (accounts) {
@@ -21,14 +22,30 @@ const ConnectButton = ({ msg_gold, msg_whitelist, ...props }) => {
     if (status === 'disconnected') {
       await onConnect();
     };
+    if (status === 'connected') {
+      handleDisconnectWallet();
+    }
+  }
+
+  const [ hover, setHover ] = useState(false);
+  async function handleMouseEnter() {
+    setHover(true);
+  }
+  async function handleMouseLeave() {
+    setHover(false);
   }
 
   return (
     <Root {...props}>
       <Icon className="icon" />
-      <Button onClick={handleClickWallet} disabled={isNotFound} >
-        { status === 'disconnected' && 'Connect Wallet' }
-        { status === 'connected' && walletDisplay }
+      <Button onClick={handleClickWallet} 
+        disabled={isNotFound}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        { hover & status === 'connected' ? 'Disconnect' : status === 'connected' ? walletDisplay : 'Connect Wallet' }
+        {/* { status === 'disconnected' && 'Connect Wallet' } */}
+        {/* { status === 'connected' && walletDisplay } */}
       </Button>
     </Root>
   )
@@ -56,13 +73,16 @@ const Button = styled.div`
   cursor: pointer;
   padding: 5px 8px 4px;
   margin-left: 6px;
+  width: 96px;
   border-radius: 18px;
   color: #FFF;
   font-size: 12px;
   letter-spacing: 0.5px;
   background-color: #2A3544;
   white-space: nowrap;
+  text-align: center;
   ${fontFamily};
+  transition-duration: 500ms;
 `
 
 

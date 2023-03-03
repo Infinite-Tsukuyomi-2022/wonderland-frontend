@@ -68,7 +68,7 @@ const MintSection = ({...props}) => {
         <Main>
           <img src="/images/mint-main.png" alt="" />
           <Button onClick={handleClickMintButton}>{
-            currentStatus === 'minted' ? wording.minted : wallet.status === 'connected' ? wording.free : wording.connect
+            currentStatus === 'minted' & wallet.status === 'connected' ? wording.minted : wallet.status === 'connected' ? wording.free : wording.connect
           }</Button>
         </Main>
         <Content lang={lang}>

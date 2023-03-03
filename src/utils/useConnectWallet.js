@@ -1,7 +1,7 @@
 import { isAndroid, isIOS } from "react-device-detect";
 import { useDispatch, useSelector } from "react-redux";
 import { metamaskAppUrl } from "../contract";
-import { setWalletAddress, setWalletDisplay, setWalletIsFound, setWalletIsNotFound, setWalletStatusConnected } from '../store/wallet';
+import { setWalletAddress, setWalletDisplay, setWalletIsFound, setWalletIsNotFound, setWalletStatusConnected, setWalletStatusDisconnected } from '../store/wallet';
 
 const useConnectWallet = () => {
   const dispatch = useDispatch();
@@ -16,6 +16,12 @@ const useConnectWallet = () => {
     dispatch(setWalletAddress(address));
     dispatch(setWalletDisplay(simplifyAddress(address)));
     dispatch(setWalletIsFound());
+  }
+
+  async function handleDisconnectWallet () {
+    dispatch(setWalletStatusDisconnected());
+    dispatch(setWalletAddress(null));
+    dispatch(setWalletDisplay(null));
   }
 
   async function handleConnectWallet () {
@@ -58,6 +64,7 @@ const useConnectWallet = () => {
     status,
     isNotFound,
     onConnect: handleConnectWallet,
+    handleDisconnectWallet
   }
 
   
