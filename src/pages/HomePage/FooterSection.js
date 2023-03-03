@@ -18,7 +18,7 @@ const FooterSection = () => {
     <Root>
       <Wrapper>
         <Logo>
-          <a href={wording.logoLink}>
+          <a href={wording.logoLink} target="_blank" rel="noreferrer">
             <img src="/images/footer-logo.png" alt="" style={{width:"288px", height:"auto"}} />
           </a>
         </Logo>
