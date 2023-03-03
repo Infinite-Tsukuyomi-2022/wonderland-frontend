@@ -11,6 +11,9 @@ import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import configureStore from "./store";
 
+import FAB from './components/FAB';
+
+
 const App = ({ Router = BrowserRouter }) => {
 
   return (
@@ -27,6 +30,7 @@ const App = ({ Router = BrowserRouter }) => {
           <AutoScrollHelper />
           <LanguageHelper />
           <Header />
+          <FAB />
           <Switch>
             <Route path="/" exact={true} component={HomePage} />
             <Route path="/en/" exact={true} component={HomePage} />
