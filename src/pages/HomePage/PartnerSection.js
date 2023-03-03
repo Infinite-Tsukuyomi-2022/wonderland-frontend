@@ -24,7 +24,7 @@ const PartnerSection = ({...props}) => {
           { wording.list.map((item, i) =>
             item.link ?
             <li key={i}>
-              <a href={item.link} target="_blank">
+              <a href={item.link} target="_blank" rel="noreferrer">
                 <img src={item.photo} alt="" />
               </a>
             </li>
