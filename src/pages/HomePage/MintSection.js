@@ -21,9 +21,6 @@ const MintSection = ({...props}) => {
   const { onConnect } = useConnectWallet();
   
   const handleClickMintButton = async() => {
-    if (wallet.status === 'disconnected') {
-
-    }
     if (wallet.status === 'connected') {
       const { quantity } = await hasMinted(wallet.walletAddress);
 
