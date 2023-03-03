@@ -21,6 +21,9 @@ const MintSection = ({...props}) => {
   const { onConnect } = useConnectWallet();
   
   const handleClickMintButton = async() => {
+    if (wallet.status === 'disconnected') {
+
+    }
     if (wallet.status === 'connected') {
       const { quantity } = await hasMinted(wallet.walletAddress);
 
@@ -65,7 +68,7 @@ const MintSection = ({...props}) => {
         <Main>
           <img src="/images/mint-main.png" alt="" />
           <Button onClick={handleClickMintButton}>{
-            currentStatus === 'minted' ? "Fuck" : wallet.status === 'connected' ? wording.free : wording.connect
+            currentStatus === 'minted' ? wording.minted : wallet.status === 'connected' ? wording.free : wording.connect
           }</Button>
         </Main>
         <Content lang={lang}>

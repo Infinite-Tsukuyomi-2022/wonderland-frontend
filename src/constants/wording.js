@@ -53,6 +53,7 @@ const homepage = {
   mint: {
     title: "鑄造NFT",
     free: "免費領取灣島樂園",
+    minted: "您已領取灣島樂園",
     connect: '連結錢包',
     total: "總數量",
     total_count: "3000",
@@ -149,6 +150,7 @@ const homepage_en = {
   mint: {
     title: "Mint NFT",
     free: "Free Mint for Wonderland",
+    minted: "You already minted",
     connect: 'Connect Wallet',
     total: "in total.",
     total_count: "3000",
