@@ -7,6 +7,7 @@ import SlideInItem from '../../components/SlideInItem';
 import { fontFamilyBold, fontFamily, Subtitle, Text, Title } from '../../components/Typography';
 import { colors } from '../../constants/colors';
 import { mintNFT } from '../../utils/mintNFT';
+import { hasMinted } from '../../utils/hasMinted';
 import { respondTo } from '../../utils/responsive';
 import useConnectWallet from '../../utils/useConnectWallet';
 import { _wl } from '../../utils/useWording';
@@ -21,12 +22,20 @@ const MintSection = ({...props}) => {
   
   const handleClickMintButton = async() => {
     if (wallet.status === 'connected') {
-      const { status, message } = await mintNFT(1);
-      if (status === 'succeed') {
-        setCurrentStatus('succeed');
+      const { quantity } = await hasMinted(wallet.walletAddress);
+
+      if (quantity < 1){
+        const { status, message } = await mintNFT(1);
+        if (status === 'succeed') {
+          setCurrentStatus('succeed');
+        }
+        else if (status === 'failed') {
+          setCurrentStatus('failed');
+        }
       }
-      else if (status === 'failed') {
-        setCurrentStatus('failed');
+      else {
+        console.log("You have already minted.")
+        // Add hint here 
       }
     }
     else {
