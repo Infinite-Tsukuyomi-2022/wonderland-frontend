@@ -19,7 +19,7 @@ const FooterSection = () => {
       <Wrapper>
         <Logo>
           <a href={wording.logoLink}>
-            <img src="/images/footer-logo.svg" alt="" />
+            <img src="/images/footer-logo.png" alt="" style={{width:"288px", height:"auto"}} />
           </a>
         </Logo>
         <Content>
@@ -37,7 +37,7 @@ const FooterSection = () => {
               <img src="/images/footer-email.svg" alt="" />
               <span>{wording.email}</span>
             </a>
-            <img className="logo" src="images/footer-logo.svg" alt="" />
+            <img className="logo" src="/images/footer-logo.png" alt="" style={{width:"288px", height:"auto"}} />
             <p className="copyright">{ wording.copyright }</p>
           </div>
         </Content>
