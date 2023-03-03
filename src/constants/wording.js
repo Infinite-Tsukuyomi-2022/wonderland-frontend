@@ -144,8 +144,8 @@ const homepage_en = {
   },
   empower: {
     title: "Utility",
-    subtitle: "Film and Television Utilities ×\nIP Co-creation × Answer to Earn",
-    content: "Film and Television Utilities × IP Co-creation × Answer to Earn \n We aim to build a platform to share IP through Wonderland NFT, assist creators to re-translate Taiwan’s image for the international market through blockchain technology, and share the most profits with creators. \n Besides creators, you are welcome to join our Oh My Goblin (OMG) Tokenomics platform to get tokens by “Answer to earn” and exchange them for the products you favored."
+    subtitle: "Film and TV Utilities ×\nIP Co-creation × Answer to Earn",
+    content: "Film and TV Utilities × IP Co-creation × Answer to Earn \n We aim to build a platform to share IP through Wonderland NFT, assist creators to re-translate Taiwan’s image for the international market through blockchain technology, and share the most profits with creators. \n Besides creators, you are welcome to join our Oh My Goblin (OMG) Tokenomics platform to get tokens by “Answer to earn” and exchange them for the products you favored."
   },
   mint: {
     title: "Mint NFT",
