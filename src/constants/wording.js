@@ -104,7 +104,7 @@ const homepage = {
     title: "合作夥伴",
     list: [
       { link: "https://www.settv.com.tw/", photo: "/images/partner-set.svg"},
-      { link: "https://www.aicreate360.com/", photo: "/images/partner-create.png"},
+      { link: "https://www.aicreate360.com/", photo: "/images/partner-create.svg"},
       { link: "https://www.liondaonft.com/", photo: "/images/partner-lion.svg"},
       { link: "https://www.chaebol.art/", photo: "/images/partner-chaebol.svg"},
       { link: "", photo: "/images/partner-hongmin.png"},
@@ -199,7 +199,7 @@ const homepage_en = {
     title: "Partner",
     list: [
       { link: "https://www.settv.com.tw/", photo: "/images/partner-set.svg"},
-      { link: "https://www.aicreate360.com/", photo: "/images/partner-create.png"},
+      { link: "https://www.aicreate360.com/", photo: "/images/partner-create.svg"},
       { link: "https://www.liondaonft.com/", photo: "/images/partner-lion.svg"},
       { link: "https://www.chaebol.art/", photo: "/images/partner-chaebol.svg"},
       { link: "https://cargocollective.com/boyealai", photo: "/images/partner-hongmin.png"},
