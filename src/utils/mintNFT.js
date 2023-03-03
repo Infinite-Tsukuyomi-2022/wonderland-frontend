@@ -59,11 +59,12 @@ function getTransactionParams(amount) {
 }
 
 export const mintNFT = async (amount) => {
+  await switchNetwork(contractChainId);
   let message = '';
-  if (contract_address !== contractChainId) {
-    const { name } = chainMapping(contractChainId);
-    message = `You should be using ${name}.`;
-  }
+  // if (currentChainId !== contractChainId) {
+  //   const { name } = chainMapping(contractChainId);
+  //   message = `You should be using ${name}.`;
+  // }
 
   const transactionParams = getTransactionParams(amount);
 
@@ -83,3 +84,44 @@ export const mintNFT = async (amount) => {
 
   return { message };
 };
+
+
+async function switchNetwork(chainId){
+  const currentChainId = await web3.eth.getChainId();
+  if (currentChainId !== chainId){
+      try {
+          await window.ethereum.request({
+              method:'wallet_switchEthereumChain',
+              params: [{chainId: Web3.utils.toHex(chainId)}]
+          });
+          console.log(`switched to chainid : ${chainId} succesfully`);
+      }catch(err){
+          console.log(`error occured while switching chain to chainId ${chainId}, err: ${err.message} code: ${err.code}`);
+      }
+  }
+}
+
+const polygonNetwork = {
+  chainId: Web3.utils.toHex(contractChainId),
+  chainName: "Polygon Mainnet",
+  nativeCurrency: {
+    name: "MATIC",
+    symbol: "MATIC", // 2-6 characters long
+    decimals: 18
+  },
+  rpcUrls: ["https://polygon-rpc.com/"],
+  blockExplorerUrls:["https://polygonscan.com/"]
+}
+
+async function addNetwork(networkDetails){
+  try{
+      await window.ethereum.request({
+          method: 'wallet_addEthereumChain',
+          params: [
+              networkDetails
+          ]
+        });
+  }catch(err){
+      console.log(`error ocuured while adding new chain with chainId:${networkDetails.chainId}, err: ${err.message}`)
+  }
+}
