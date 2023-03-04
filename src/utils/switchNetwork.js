@@ -15,32 +15,36 @@ export const switchNetwork = async () => {
       });
       console.log(`switched to chainid : ${contractChainId} succesfully`);
     }catch(err){
+      if (err.code === 4902) {
+        await addNetwork(polygonNetwork);
+      }else{
         console.log(`error occured while switching chain to chainId ${contractChainId}, err: ${err.message} code: ${err.code}`);
+      }
     }
   }
   }
   
-// const polygonNetwork = {
-// chainId: Web3.utils.toHex(contractChainId),
-// chainName: "Polygon Mainnet",
-// nativeCurrency: {
-//   name: "MATIC",
-//   symbol: "MATIC", // 2-6 characters long
-//   decimals: 18
-// },
-// rpcUrls: ["https://polygon-rpc.com/"],
-// blockExplorerUrls:["https://polygonscan.com/"]
-// }
+const polygonNetwork = {
+chainId: '0x89',
+chainName: "Polygon Mainnet",
+nativeCurrency: {
+  name: "MATIC",
+  symbol: "MATIC", // 2-6 characters long
+  decimals: 18
+},
+rpcUrls: ["https://polygon-rpc.com/"],
+blockExplorerUrls:["https://polygonscan.com/"]
+}
 
-// async function addNetwork(networkDetails){
-// try{
-//   await window.ethereum.request({
-//     method: 'wallet_addEthereumChain',
-//     params: [
-//       networkDetails
-//     ]
-//   });
-// }catch(err){
-//   console.log(`error ocuured while adding new chain with chainId:${networkDetails.chainId}, err: ${err.message}`)
-// }
-// }
+async function addNetwork(networkDetails){
+try{
+  await window.ethereum.request({
+    method: 'wallet_addEthereumChain',
+    params: [
+      networkDetails
+    ]
+  });
+}catch(err){
+  console.log(`error ocuured while adding new chain with chainId:${networkDetails.chainId}, err: ${err.message}`)
+}
+}
