@@ -4,6 +4,7 @@ import useConnectWallet from '../../utils/useConnectWallet';
 import { colors } from '../../constants/colors';
 import { fontFamily } from '../Typography';
 import { respondTo } from '../../utils/responsive';
+import { switchNetwork } from '../../utils/switchNetwork';
 import { F } from 'ramda';
 
 const ConnectButton = ({ msg_gold, msg_whitelist, ...props }) => {
@@ -21,6 +22,7 @@ const ConnectButton = ({ msg_gold, msg_whitelist, ...props }) => {
     if (isNotFound) return;
     if (status === 'disconnected') {
       await onConnect();
+      await switchNetwork();
     };
     if (status === 'connected') {
       handleDisconnectWallet();

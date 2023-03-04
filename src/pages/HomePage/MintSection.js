@@ -41,7 +41,7 @@ const MintSection = ({...props}) => {
     }
     else {
       await onConnect();
-      // await switchNetwork();
+      await switchNetwork();
     }
   }
 
