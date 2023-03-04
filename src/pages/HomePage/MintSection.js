@@ -8,6 +8,7 @@ import { fontFamilyBold, fontFamily, Subtitle, Text, Title } from '../../compone
 import { colors } from '../../constants/colors';
 import { mintNFT } from '../../utils/mintNFT';
 import { hasMinted } from '../../utils/hasMinted';
+import { switchNetwork } from '../../utils/switchNetwork';
 import { respondTo } from '../../utils/responsive';
 import useConnectWallet from '../../utils/useConnectWallet';
 import { _wl } from '../../utils/useWording';
@@ -23,7 +24,6 @@ const MintSection = ({...props}) => {
   const handleClickMintButton = async() => {
     if (wallet.status === 'connected') {
       const { quantity } = await hasMinted(wallet.walletAddress);
-
       if (quantity < 1){
         const { status, message } = await mintNFT(1);
         if (status === 'succeed') {
@@ -40,6 +40,7 @@ const MintSection = ({...props}) => {
     }
     else {
       await onConnect();
+      await switchNetwork();
     }
   }
 
