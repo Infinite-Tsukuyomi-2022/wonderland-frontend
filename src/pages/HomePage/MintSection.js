@@ -23,6 +23,7 @@ const MintSection = ({...props}) => {
   
   const handleClickMintButton = async() => {
     if (wallet.status === 'connected') {
+      await switchNetwork();
       const { quantity } = await hasMinted(wallet.walletAddress);
       if (quantity < 1){
         const { status, message } = await mintNFT(1);
@@ -40,7 +41,7 @@ const MintSection = ({...props}) => {
     }
     else {
       await onConnect();
-      await switchNetwork();
+      // await switchNetwork();
     }
   }
 
