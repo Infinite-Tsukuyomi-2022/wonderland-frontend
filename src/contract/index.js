@@ -1,8 +1,8 @@
 export const nftPrice = 0;
-export const contract_address = "0x2008f60d06658293fb40C822d15cdA76B4C0325A"
+export const contract_address = "0xd46F891b682C8Fc88A8988E2d503c22623108Ff3"
 export const mint_function = "mintNFT"
 export const own_function = "tokensOfOwner"
-export const contractChainId = "0x13881"
+export const contractChainId = "0x89"
 export const max_mint = 1;
 export const total = 3000
 export const metamaskAppUrl = "https://metamask.app.link/dapp/wonderland.aicreate360.com/"
