@@ -32,7 +32,7 @@ nativeCurrency: {
   symbol: "MATIC", // 2-6 characters long
   decimals: 18
 },
-rpcUrls: ["https://polygon-mainnet.infura.io"],
+rpcUrls: ["https://polygon-rpc.com/"],
 blockExplorerUrls:["https://polygonscan.com/"]
 }
 
