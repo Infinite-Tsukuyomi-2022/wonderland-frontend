@@ -22,27 +22,27 @@ const MintSection = ({...props}) => {
   const { onConnect } = useConnectWallet();
   
   const handleClickMintButton = async() => {
-    if (wallet.status === 'connected') {
-      await switchNetwork();
-      const { quantity } = await hasMinted(wallet.walletAddress);
-      if (quantity < 1){
-        const { status, message } = await mintNFT(1);
-        if (status === 'succeed') {
-          setCurrentStatus('succeed');
-        }
-        else if (status === 'failed') {
-          setCurrentStatus('failed');
-        }
-      }
-      else {
-        setCurrentStatus('minted');
-        // Add hint here 
-      }
-    }
-    else {
-      await onConnect();
-      await switchNetwork();
-    }
+    // if (wallet.status === 'connected') {
+    //   await switchNetwork();
+    //   const { quantity } = await hasMinted(wallet.walletAddress);
+    //   if (quantity < 1){
+    //     const { status, message } = await mintNFT(1);
+    //     if (status === 'succeed') {
+    //       setCurrentStatus('succeed');
+    //     }
+    //     else if (status === 'failed') {
+    //       setCurrentStatus('failed');
+    //     }
+    //   }
+    //   else {
+    //     setCurrentStatus('minted');
+    //     // Add hint here 
+    //   }
+    // }
+    // else {
+    //   await onConnect();
+    //   await switchNetwork();
+    // }
   }
 
   return (
