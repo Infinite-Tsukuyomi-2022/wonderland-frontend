@@ -13,10 +13,10 @@ const header = {
   ],
   socials: [
     { "icon": "Discord", "link": "https://discord.com/invite/BPRPgKpbcz" },
-    { "icon": "Opensea", "link": "" },
-    { "icon": "Instagram", "link": "https://www.instagram.com/settvdao_wonderland/" },
+    { "icon": "Opensea", "link": "https://opensea.io/" },
+    { "icon": "Instagram", "link": "https://www.instagram.com/cidao_wonderland/" },
   ],
-  email: "settvdao@aicrate360.com",
+  email: "cidao@aicreate360.com",
   copyright: "2023 copyright Create Intelligens Inc."
 }
 
@@ -33,10 +33,10 @@ const header_en = {
   ],
   socials: [
     { "icon": "Discord", "link": "https://discord.com/invite/BPRPgKpbcz" },
-    { "icon": "Opensea", "link": "" },
-    { "icon": "Instagram", "link": "https://www.instagram.com/settvdao_wonderland/" },
+    { "icon": "Opensea", "link": "https://opensea.io/" },
+    { "icon": "Instagram", "link": "https://www.instagram.com/cidao_wonderland/" },
   ],
-  email: "settvdao@aicrate360.com",
+  email: "cidao@aicreate360.com",
   copyright: "2023 copyright Create Intelligens Inc."
 }
 
@@ -131,7 +131,7 @@ const homepage = {
       { "to": "/?to=partner", "title": "合作夥伴" },
       { "to": "/?to=qa", "title": "常見問題" },
     ],
-    email: "settvdao@aicrate360.com",
+    email: "cidao@aicreate360.com",
     copyright: "2023 copyright Create Intelligens Inc."
   }
 
@@ -225,7 +225,7 @@ const homepage_en = {
       { "to": "/en/?to=partner", "title": "Partner" },
       { "to": "/en/?to=qa", "title": "FAQ" },
     ],
-    email: "settvdao@aicrate360.com",
+    email: "cidao@aicreate360.com",
     copyright: "2023 copyright Create Intelligens Inc."
   }
 
