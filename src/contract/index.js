@@ -1,9 +1,9 @@
 export const nftPrice = 0;
-export const contract_address = "0xd46F891b682C8Fc88A8988E2d503c22623108Ff3"
+export const contract_address = "0x03BDD595639Fb287622Fc1A0baced3f3E1186ACE"
 export const mint_function = "mintNFT"
 export const own_function = "tokensOfOwner"
 export const contractChainId = "0x89"
 export const max_mint = 1;
 export const total = 3000
 export const metamaskAppUrl = "https://metamask.app.link/dapp/wonderland.aicreate360.com/"
-export const openseaUrl = "https://testnets.opensea.io/zh-TW/collection/wonderland-aicreate360-2"
+export const openseaUrl = "https://opensea.io/"
