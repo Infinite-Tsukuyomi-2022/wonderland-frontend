@@ -63,8 +63,8 @@ const homepage = {
   },
   design: {
     title: "設計",
-    content: "加入灣島樂園，展開自己的冒險\n歡樂、有趣、搞怪的日常大小事、熟悉的街坊奇聞，\n催生出六個系列主題\n奇幻動物、夜市怪獸、妖魔鬼怪、島嶼傳奇、滿天神佛、婚姻平權，\n透過隨機組合，生成3000座獨一無二的灣島樂園。",
-    content_m: "加入灣島樂園，展開自己的冒險\n歡樂、有趣、搞怪的日常大小事、\n熟悉的街坊奇聞，\n催生出六個系列主題\n奇幻動物、夜市怪獸、妖魔鬼怪、\n島嶼傳奇、滿天神佛、婚姻平權，\n透過隨機組合，\n生成3000座獨一無二的灣島樂園。",
+    content: "加入灣島樂園，展開自己的冒險\n歡樂、有趣、搞怪的日常大小事、熟悉的街坊奇聞\n催生出六個系列主題\n奇幻動物、夜市怪獸、妖魔鬼怪、島嶼傳奇、滿天神佛、婚姻平權",
+    content_m: "加入灣島樂園，展開自己的冒險\n歡樂、有趣、搞怪的日常大小事、\n熟悉的街坊奇聞\n催生出六個系列主題\n奇幻動物、夜市怪獸、妖魔鬼怪、\n島嶼傳奇、滿天神佛、婚姻平權",
     gallery: [
       "/images/design-1.png",
       "/images/design-2.png",
@@ -160,8 +160,8 @@ const homepage_en = {
   },
   design: {
     title: "Design",
-    content: "Welcome to Wonderland and begin your adventures.\nAll the joyful, interesting, and funny daily affairs and strange news around the streets result in six themes, \nsuch as Fantasy Creature, Night Market Monsters, Ghosts and Bugaboos, Island Legends, Mighty Deities, \nand Marriage Equality, which generate randomly over 3,000 unique Wonderlands.",
-    content_m: "Welcome to Wonderland and begin your adventures.\nAll the joyful, interesting, and funny daily affairs and strange news around the streets result in six themes, such as Fantasy Creature, Night Market Monsters, Ghosts and Bugaboos, Island Legends, Mighty Deities, and Marriage Equality, which generate randomly over 3,000 unique Wonderlands.",
+    content: "Welcome to Wonderland and begin your adventures.\nAll the joyful, interesting, and funny daily affairs and strange news around the streets result in six themes, \nsuch as Fantasy Creature, Night Market Monsters, Ghosts and Bugaboos, Island Legends, Mighty Deities, \nand Marriage Equality.",
+    content_m: "Welcome to Wonderland and begin your adventures.\nAll the joyful, interesting, and funny daily affairs and strange news around the streets result in six themes, such as Fantasy Creature, Night Market Monsters, Ghosts and Bugaboos, Island Legends, Mighty Deities, and Marriage Equality.",
     gallery: [
       "/images/design-1.png",
       "/images/design-2.png",
