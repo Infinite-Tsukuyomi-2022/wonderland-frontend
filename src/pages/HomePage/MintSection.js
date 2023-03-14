@@ -22,26 +22,30 @@ const MintSection = ({...props}) => {
   const { onConnect } = useConnectWallet();
   
   const handleClickMintButton = async() => {
-    if (wallet.status === 'connected') {
-      await switchNetwork();
-      const { quantity } = await hasMinted(wallet.walletAddress);
-      if (quantity < 1){
-        const { status, message } = await mintNFT(1);
-        if (status === 'succeed') {
-          setCurrentStatus('succeed');
+    if (Date.now() < 1680148800000) {
+      setCurrentStatus('notyet');
+    }else{
+      if (wallet.status === 'connected') {
+        await switchNetwork();
+        const { quantity } = await hasMinted(wallet.walletAddress);
+        if (quantity < 1){
+          const { status, message } = await mintNFT(1);
+          if (status === 'succeed') {
+            setCurrentStatus('succeed');
+          }
+          else if (status === 'failed') {
+            setCurrentStatus('failed');
+          }
         }
-        else if (status === 'failed') {
-          setCurrentStatus('failed');
+        else {
+          setCurrentStatus('minted');
+          // Add hint here 
         }
       }
       else {
-        setCurrentStatus('minted');
-        // Add hint here 
+        await onConnect();
+        await switchNetwork();
       }
-    }
-    else {
-      await onConnect();
-      await switchNetwork();
     }
   }
 
@@ -67,7 +71,7 @@ const MintSection = ({...props}) => {
         <Main>
           <img src="/images/mint-main.png" alt="" />
           <Button onClick={handleClickMintButton}>{
-            currentStatus === 'minted' & wallet.status === 'connected' ? wording.minted : wallet.status === 'connected' ? wording.free : wording.connect
+            currentStatus === 'notyet' ? wording.notyet : currentStatus === 'minted' & wallet.status === 'connected' ? wording.minted : wallet.status === 'connected' ? wording.free : wording.connect
           }</Button>
         </Main>
         <Content lang={lang}>
