@@ -14,7 +14,7 @@ const header = {
   socials: [
     { "icon": "Discord", "link": "https://discord.com/invite/BPRPgKpbcz" },
     { "icon": "Opensea", "link": "https://opensea.io/" },
-    { "icon": "Instagram", "link": "https://www.instagram.com/cidao_wonderland/" },
+    { "icon": "Instagram", "link": "https://www.instagram.com/wonderland_aicreate360/" },
   ],
   email: "cidao@aicreate360.com",
   copyright: "2023 copyright Create Intelligens Inc."
@@ -34,7 +34,7 @@ const header_en = {
   socials: [
     { "icon": "Discord", "link": "https://discord.com/invite/BPRPgKpbcz" },
     { "icon": "Opensea", "link": "https://opensea.io/" },
-    { "icon": "Instagram", "link": "https://www.instagram.com/cidao_wonderland/" },
+    { "icon": "Instagram", "link": "https://www.instagram.com/wonderland_aicreate360/" },
   ],
   email: "cidao@aicreate360.com",
   copyright: "2023 copyright Create Intelligens Inc."
