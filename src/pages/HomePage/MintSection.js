@@ -25,6 +25,7 @@ const MintSection = ({...props}) => {
     if (Date.now() < 1680148800000) {
       setCurrentStatus('notyet');
     }else{
+      setCurrentStatus('started');
       if (wallet.status === 'connected') {
         await switchNetwork();
         const { quantity } = await hasMinted(wallet.walletAddress);
