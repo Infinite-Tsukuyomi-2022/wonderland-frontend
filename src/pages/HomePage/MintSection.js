@@ -22,7 +22,7 @@ const MintSection = ({...props}) => {
   const { onConnect } = useConnectWallet();
   
   const handleClickMintButton = async() => {
-    if (Date.now() < 1680075900000) {
+    if (Date.now() < 1680148800000) {
       setCurrentStatus('notyet');
     }else{
       if (wallet.status === 'connected') {
