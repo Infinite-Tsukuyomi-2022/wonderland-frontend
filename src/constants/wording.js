@@ -53,7 +53,7 @@ const homepage = {
   mint: {
     title: "鑄造NFT",
     free: "免費領取灣島樂園",
-    sold: "公售已售完",
+    sold: "已完售",
     minted: "您已領取灣島樂園",
     notyet: "公售尚未開始",
     connect: '連結錢包',
