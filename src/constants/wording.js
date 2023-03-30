@@ -53,6 +53,7 @@ const homepage = {
   mint: {
     title: "鑄造NFT",
     free: "免費領取灣島樂園",
+    sold: "公售已售完",
     minted: "您已領取灣島樂園",
     notyet: "公售尚未開始",
     connect: '連結錢包',
@@ -151,6 +152,7 @@ const homepage_en = {
   mint: {
     title: "Mint NFT",
     free: "Free Mint for Wonderland",
+    sold: "Sold out",
     minted: "You already minted",
     notyet: "Public sale on 3/30",
     connect: 'Connect Wallet',
